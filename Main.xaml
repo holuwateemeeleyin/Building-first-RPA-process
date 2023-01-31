@@ -1,0 +1,262 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1117,4219" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="76">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="78">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="1. This workflow retrieves all unread emails, from the outlook account in use, that have 'Course Invoices' in the subject line.&#xA;2. Emails retrieved are saved under the 'CourseEmails' list MailMessage type of variable&#xA;3. Afterwards, attachment for each mailmessage retrieved are saved in a new project folder titled 'Invoices'." DisplayName="Sequence for saving attachments and creating a draft email in Outlook" sap:VirtualizedContainerService.HintSize="1127,4154" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="CourseEmails" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetOutlookMailMessages Account="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" Filter="[subject] = 'Course Invoices' " GetAttachements="False" sap:VirtualizedContainerService.HintSize="1065,25" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Inbox" MarkAsRead="False" Messages="[CourseEmails]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Top="30" />
+    <ui:LogMessage DisplayName="Log Message Emails Retrieved" sap:VirtualizedContainerService.HintSize="1065,94" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[CourseEmails.Count.ToString + &quot;mail messages have been retrieved.&quot;]" />
+    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each retrieved email stored under CourseEmails variable" sap:VirtualizedContainerService.HintSize="1065,2909" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[CourseEmails]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="snm:MailMessage">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="RetrievedEmail" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Save Attachments in a new/existing folder called &quot;Invoices&quot;" sap:VirtualizedContainerService.HintSize="1029,2782" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SaveMailAttachments Attachments="{x:Null}" DisplayName="Save Attachments from 'RetrievedEmail&quot;" ExcludeInlineAttachments="False" FolderPath="Invoices\" sap:VirtualizedContainerService.HintSize="967,92" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_1" Message="[RetrievedEmail]" OverwriteExisting="False" />
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="967,135" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Excel" />
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="967,135" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="Chrome" />
+            <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Excel Application Scope for each invoices sheet" sap:VirtualizedContainerService.HintSize="967,2189" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" Visible="False" WorkbookPath="[&quot;Invoices\&quot; + RetrievedEmail.Attachments.First.Name]">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Read the client code" sap:VirtualizedContainerService.HintSize="933,2079" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Double" Name="ClientCode" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelReadCell Cell="E8" DisplayName="Read Cell to store the client code" sap:VirtualizedContainerService.HintSize="871,60" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="Invoice">
+                      <ui:ExcelReadCell.Result>
+                        <OutArgument x:TypeArguments="x:Double">[ClientCode]</OutArgument>
+                      </ui:ExcelReadCell.Result>
+                    </ui:ExcelReadCell>
+                    <Sequence DisplayName="Sequence to get the discount value and update invoices" sap:VirtualizedContainerService.HintSize="871,1868" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="809,1757" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fbdedd34-4046-4413-b86d-bed41e1627e5" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do for generating and storing the discount values" sap:VirtualizedContainerService.HintSize="775,1539" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="DiscountValue" />
+                                <Variable x:TypeArguments="x:String" Default="DeGreenguy-TimiSam" Name="Signature" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="713,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                              <uix:NClick ClickType="Single" DisplayName="Click 'Part 2'" sap:VirtualizedContainerService.HintSize="713,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fbdedd34-4046-4413-b86d-bed41e1627e5" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/first-automation" DesignTimeRectangle="298, 232, 77, 27" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Part 2'" FullSelectorArgument="&lt;webctrl aaname='Part 2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Part 2' tag='A' type='' class='' check:innerText='PART 2' /&gt;" Guid="f98f3408-893d-4277-81e2-c2225affb545" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAAfCAYAAACf3SEqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ9SURBVGhD7Zkvb8JAFMD7MWqX8AGQmyWZQTbBzKKmJ3FLg1hQpBLbuUlwzCwZYgn7Bp2YQE4iEG/X3oP796609JZt5X7JE6Pv7nq/vrsrLABPY7xEB3iJDqgmcbeF7H0Jy+eSeM9gu8P8M+O4xI8nGHYCCIIK0RnC0we2OyOOSlyPQ1qYJcLxGlueD0ckbiAdCEEXlz3oXRNxeSFEDlLW6ryoJTFe4cc6q9hL5HxBtpjB5GEixQhuukJi/1a+JsVtX0js3sBIuz5bZKz39oISt2zvuxIifiCu2F655YO1DpS4hjikJ+8swpiN0k5Q4ivE1MSdRsxGaSdeogO8RAegxAzm2onqPuZsFAr1NUqO6FF/WcKHTb5GlRTCPT6+zxQi6vo+9nk6Wjv9vlDib8Ilmu+gXIp8w5vHiE00Lj6n8yNIP/HPA2Y/HNu4GihQ5PH+5HYocQ0J9U1Ei+SNZxu8JWS+GonldLZPhkvbV4fIe72nqsYmEfsxqreaRKqtel8190TrgPI3FmvY9sSKEouKwD6K8fT+fkYihf4Qa0kcvfBsg5cRma9GTYnaMlJvnLdRl6hNIp/byctZp7gvdZxaEoNOBHfGgXEHUaWfysolUm3ExE1BZnXZ52AKzDlBIj5Yvb96EhtF/eW8pxBG9im3M0UX1dtgXAWLwJx/IJFfty1HscRNiYcc8pWohkTc8225f18isQcdUA4YSiIDK0g+CDgVJWL7sjyU+Js/QJRPpliSZCXl8IfPq9QiMQcrSa3mahL5lkCEdE8okWmc9iCkkp1ECL1pe/9tcJCYs1mlkBinb9NIIF3RddQWFIme0/ASHeAlOsBLdICX2BiAb45wF9fle853AAAAAElFTkSuQmCC" InformativeScreenshot="7e5a5575e38009beaf464fb2efde9c90.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Insert the'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="713,219" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="fbdedd34-4046-4413-b86d-bed41e1627e5" Text="[ClientCode.ToString]" Version="V3">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/first-automation/vendor" DesignTimeRectangle="191, 332, 178, 43" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT vendor'" FullSelectorArgument="&lt;webctrl id='vendor' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='vendor' tag='INPUT' type='email' class='' aaname='' /&gt;" Guid="dbb929e4-6b6a-454c-b1ee-397dc3141748" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALYAAAAvCAYAAABOmTCPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANXSURBVHhe7Z3LbRsxEIZTRXpII+kgrQi+pgEDLsHYQwAXICMXH3z3xXALhuEWDATMcvjQzPAhCaJscfB/AAGtuUsOZ74lBV/0zQFgEIgNzPDv7x/38euH+/j5XYq92WzQ0KZtSWohtu8AYGaS1BAbmAJiA5NAbGASiA1MArGBSSA2MAnEBiaB2MAkEBuYBGIDk0BsYBKIDUwCsYFJIDYwCcQGJjlI7Jfl1l39brU79/Aab/wE3u/v3NXyHK9ibOz6XNC8N4/u3V+8PrrrUet+2u7GPTNiDcY5SGzBJxaixkWIPRKIfRYGiP3mHm5u3fX9W7z2PLtl3c2Xp/Uj7W5b9+KfS7u8FpH3pecqUGHSfTGGIPaW5qs/H+LTz7UQc7BdWUhR7Nhhvfk5tj56bnkUMeRciXWvOQp/LZAnprxPxqvH4HHduWVhayDacc/OALFV0T38HpJgTVruj6KlJFJxWUH2HPNBlF0BQtGVgHm88qXr7vA6FnYt1ihiZC8xIedM4uV+GpOtj+eqgs4tv5Zr1dchrrz2og79uGdniNhaRi+PTKgSNQsTkql3aCpQQz7dV4jK56tK4wuq4iH6heVC8TmqsVJ/5YUglFBdsbV8nFofW0PO8Q4ey764Z2eM2EJQ/5mJU0tWFiMUJx+FvA0Qm+6tjV0VuyeREpTNEU6MWhsgNpunoNGXNpVy3hU21764Z2eQ2Ew4n3DeTwXoi92SqUaeJ7JX7JY0BSeIzedXlDFckNiduGdnmNgh0Vv3sCZUHOe1AvgxSPb+8V/jGLF38xzCCV9FWmKunCR292Wr9R35VaQT9+yMEzsmtTjmSQIunxKICsCfOUCwQ8VOMfH+nuy6ryWwmCMIxuPtC3SM2JXnWYzUx+KV1yqPqQ55rH7cszNQ7EZiogT0ryafWN+4aCuhILFPJbsgFSgWsC+2JxRwNz4Tt4KOJQko1qbnyDHFxnJQ5kTvtCk+HrOE1pjHl/fJePXa+NrDaSpi6cQ9O8eL3cEnuZCyEA2A8zNQbH/0VQSG2OALGCM2fe9rfIWA2OALGCM2ABcGxAYmgdjAJBAbmARiA5NAbGASiA1MArGBSSA2MAnEBiaB2MAkEBuYpCq2x8uNhjZrq/4yLwCz0/wtdQBs4Nx/cMHGhqRfGjIAAAAASUVORK5CYII=" InformativeScreenshot="9fa6b82a0423b1514da1a33b20590ffa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="191, 290, 1000, 29" ElementType="Text" FriendlyName="'Insert the'" FullSelectorArgument="&lt;webctrl class='instructions' parentid='second' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='instructions' parentid='second' tag='DIV' type='' aaname='                 Insert the client code to generate the discount value according to the promotion.             ' check:innerText='Insert the client code to generate the discount value according to the promotion.' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NClick ClickType="Single" DisplayName="Click 'BUTTON submitButton'" sap:VirtualizedContainerService.HintSize="713,158" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fbdedd34-4046-4413-b86d-bed41e1627e5" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/first-automation/vendor" DesignTimeRectangle="368, 331, 42, 45" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'BUTTON submitButton'" FullSelectorArgument="&lt;webctrl id='submitButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='submitButton' tag='BUTTON' type='submit' class='' aaname='' /&gt;" Guid="9bf0b69f-22c6-4164-a5e7-d0e8a51d9c41" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAxCAYAAAClOZt5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF9SURBVGhD7ZqxSsNAHId9C9/B2WeIBALZxCdwEbJm6QtkcZJO4hAIBoJDwCV0Kbi5OTnGTRAUMSTtFeRvfokRUm5pmjvyx/vgg0ID+bhcmxyXA8uyiAN5nlMYhmTbNqGZTXhHkiT98O/sljanR7Q5OZymdRsaMfJ/4b7vTzu6s24EvRGXHjhBgQnXKTDhOgUmXKfAhOsUKA0Xs3MSF/Lv9hEoCj+m9fKFyrKk8vOJVjPZMcMFasKjxza6c+R4oCb8atEPHzkeqAmvFdGDsnigLByKazUjD5SGQzGv47/GjQfKw6GY39ex48UDLeFQXN5RNVI8GBB+RqvnVyrfP3Z3e8oMjAcDwm+o2j75vr4taC09l1zwn8LZTpVhTuDHubss/w5Z3oBY3vJ5PmSxfaxlu5Bgu3T7leFiWa3AhOsUmHCdAhOuU2DCdQr4h3uex2ZnubclHscxm738LMvacLxG4TgOpWlKRVE0l2KKVFXVRLuu24ZHUdR84GQQBPQDSsqw6evRGBYAAAAASUVORK5CYII=" InformativeScreenshot="975d62b98b422de135abebb45e9b7f0d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="191, 290, 1000, 29" ElementType="Text" FriendlyName="'Insert the'" FullSelectorArgument="&lt;webctrl class='instructions' parentid='second' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='instructions' parentid='second' tag='DIV' type='' aaname='                 Insert the client code to generate the discount value according to the promotion.             ' check:innerText='Insert the client code to generate the discount value according to the promotion.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA+wAAAAhCAYAAABDRyF/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABdrSURBVHhe7Z3/a1vHssDfH5Wf9IN5BtPQUFIoFoWIllZNyzV5r4JA1NC6pTe91KhghKHG0FyFBhGI8SPY0KBA6lsCDhgHGpTeFAfyFAjo0VDRgkoKAsO8mXN2z9mvR2cjKZWS+YBCLO3ZszM7Mztzvv4HMAzDMAzDMAzDMAwzdXDBzjAMwzAMwzAMwzBTCBfsDMMwDMMwDMMwDDOFcMHOMAzDMAzDMAzDMFMIF+wMwzAMwzAMwzAMM4Vwwc4wDMMwDMMwDMMwUwgX7AzDMAzDMAzDMAwzhXDBzjAMwzAMwzAMwzBTiF6wP9mGyrFjcOzDbeiJr6ae/iFsX97NN15X27t1OIYy1++Kv6eE9hrOw7E6tMXfydysJd9MlN7+OmzeE39MEZZexsS0yjuzhPhlCEd9ONxpwu4T8TchfKOy89dHLcs+RXyZhrFNnCcHsL71fOKTxRTZwItIb6eCdlyB7cTverD94WRicQgTi9uWLQt5Zyk3mgV8ev6L7YphGGbamPGCPWQR9bTlgt1mSnVCTKRgn2J5Z5PJJbd24YBwwT4FtKH+vOKTCy7YJ8pUFuwTi9suW55cTHt5ydAzF+wMwzAaXLDPSsH+POGCnRmJySW3M1ewvzRwwf4i4/S7vxou2GecvzhmMAzDzBBcsHPBbsMFOzMSXLC/fCkoF+wvMlywc8E+frhgZxiGycvwgl18R4tib78B1cX5aJE8tlCE6sUD6B2JdpKjHhxcXobyiULcbu44lM7VofVwIBoo9A+htVaF4gK2w7aFE2VYvmz2KRbKtQPo3qxBmdpin9VL/4T/pv7Vjy/wS7lcbeWif4fujcX+xbhpLLWdQ+ib8iG9/SYsnz4OhaiveSj65PNh6Mglt5X4SxlMGXPpUPSH89qle4tXynB8jtoX4PjpGmw/6ItWcr/qJ1+SpukE56f8WRMOrMxmAN1baEOnDN0p+0/QdITjPNuI+vMVRP0HLaifK8J81C/JtQzNO8NTq6Hy9tqwubI0VL9ejvrQ3krnen6xCo39HnQ9CXAuOUJ9khjF17Y6OHOImJOlZP6onxJU11rQeRp1kO1rgmfzHzE2rW9hB2KflZ1ubn08q70k5LVPEV+0QnKEGEn2U78h5kMlp536/Ad/sZLnqG2OmCFlVD/ewvnRJpTw95OXDsUXKl3YfBe3P9mA5Fchf0nOKX7mF5ds2RIbkPvNKLCstgJzXsh+VNvOQWTbZ0pCV/gZx9xOwgZQL537TahEss5DeXVP6GkAnRv1xIfm38W5xrHnuSQ+t71IAmOjSmzH6kdv37u3CbUzhn9j30Px2nJqT90nB9BIYgfFL/R911iNeQtaOxIb7UBHyUvccz8kbuO/udZdsc/6Xd0GaNw1HAf11Ue9JrF7AeXZOjTGgjztwt5F9FnDjw7V3Q3TsxWjcsoQ9Yu20M2fzzEMw8wCuQv2ytkKFBaWoL6zBwf7LWh+UooCZ+GTXUhDZg9aZzFAzpVwYWphuwPY26nDUrRglWHzkWhGdFtQjRYW2XYPtteWokWwcBYXxSSwigC+WMSFbwkaN6jPdWj9uwttHEf9bfztbQzcuK+Dh46kgBhktBULRxH7Pyblu7UN9TPxYlXUEssBtDdiuefP1GH7FvZzAxO0U7QoFKOFbihPMTFeJH3Mw9LaNuyR3KvluM+/p7q0Ems5N2rxk1uHor+3K1BZLEDpk2akg3RuitB4ELfrP0SZrlQj2atX8P/7behmioU6WUPdKTqhfsuUrC1cgN3fRbOkHe1/3dLdhZtd0Y4QdoRty6ukowNoXUS55mpQ+zuNV1/Mu9erscynMClD+0jnr4BJgNqvTaa8XdR5JMcS1LYM/Z7GomJoIo9ynI/HIXXeuowJHP5dXDyJ3+tJZm45gnwSGdXXyDaODqEp5qq6Ec8JjW/d3GeWr43kP5iw3UP9rZawbQmTVpqrTrxPoY+TOO5CIqNfH6PYS0yAfYr4ohaS+WOksD9VJiwUInu6rMSlADu14kqCp2DPETPg9w7uswlV2v58M5Kp7Q0ajqJcIor50tVO/Pfvu3AhstsyXIjkInuhQswRm6VPPGvBjnF5PbJDGZfJV5ehRHpdRH3lKNoPL8f2Vjwn4hvNw4boY25ZiYVI6NyO2wZOko+XUK8YO9AHm7fJQ8g/41hePCfme+sCjh+LnZUl/D5HwZ7HXiLCYqNJVtymgj+OMTXYNPy7jDaTuZx5bVnIS3qbU8fsm9/8a7MTT0xrSNvfaCtyZMRtmtO8665rXbm1CReitgVYXq2h7OU0Rzotvr+pRFeZ39CYxTqR+hHmA3J3w/SsxagAGaJ4W0IZUG9WfDfzOYZhmNkhd8F+bI6OWorvIvq44FJgxYVKxmtMGpaw7dI1I+nFRKy8UITKlkjEcNvdTyjYmn1iaL5Th5PYR3lL/iAD+Elo3BdfJYjf1PF68bSVR3rNpAwLlMZJ/F5NLB80MKHARXT1QF/0j7px35iwH2RmA5jUXaRk5CTU7+gNO1fLmoxWYi3nIUmoQ3Qo+8MFC7fX9ny/EbXVzngJneS61FBub+qE5py+vxj3O9ivxcmsuf+jDjQpgVcSHtm2YtiRlEvTCyb1y5QM4LzqSdAADlZJ11gEPRZf+XDKKwoLy+5R87eELEMWf68cuD+yIy0pDZEjxCfH5GuDu+vRGZPqDbX0JQawFxWpFWgljuXxtTH4T9Yl8bn0MQZ7CbJPYVtJcRgQI+OxmzKhvldoPqvQivwlzE6tuJLgKdhp+zwxw7G9j+6WiHVaAUcxkA7GpPrvXl/GAsQR9ylm0AGhufVUDmEDz1qwH16igsCOy1EhjG0LXxk2azKggv84FM63cOZ0BrcuRHqsXJf7yzu3k7QBLHRNX34sYrbpn0IHut/JWJHaUoi9BMVGH664LWSwiuKjvtCZeeDAhcuWpbz2Qb3+jfjAQVq4hq3NTmRMw/HqBzLl3KtxKiNuB6y7aRxdVmI5Ig6kRftUDygO9qBG3ycHRDGGfhXr2Dr4+rAZz4t28DRLz6ldBckgbCJXPscwDDND5C/YV/b0YIl0rxlH3UUyenJlN/uyL9FnQQvUkg5sRmfnNvF/RBrAD6w+xW/qeL142ooAn5zVUYgTkBrsCcHba7QYuROJwe1a1E/ttqklFUzqRLFgjZd0oiTsVmIt50HqLEiHsr+SvuASRwf2oulKhDy0N3w6IX3PQ/FDGgMlMLT/VJcqUndxQksJia+tkEvRS1zAFdxjNc/Y+XDJi8UlJVbubcU41ILBIktmJREXeguSI8Qnx+ZrfryXyxp2Prr/uPaFZOgjbp/a/ej2Emaf0rbMgn1ojOy1/POGfc6fKEGdzooG2qkVVxJ8BXvOmOHY3ouYL73gF2N9dxPLz+H44uMzFexHOHZfXM6c75yY+8s7txO1gSWrmIwPmDjmO9GBw8eVOchvL2Gx0Ysjbh9eooNuLhkQ4d+FDYc+NbIKSceYxfya8Tnv2uxE9OGKaVKO1H98cTtk3UW8+xT6+Nu24Ztd2P4bfi/9pr8Ly74xKzaUHgzI0rO0q0AZhE24fOFgVe2XYRhmtshdsOvJVUyc/KpnSuSlohQY6R4juiStDR159FMig+oqXeZFl7Opn11YP6MGaBHAnQuc+M2ZaJl42oqxaJd1CeIERCYOciGpQtMaM362LsBxkikr2Zf6dS7kOr6ENNk2SIeyP/XMq0QsmuqRb0ci5MZcXH2IAxXWgi/QZBNHwj1tTb3IJDG+RNr4/Gs9Ko7cCYSCQ97edbJt/O6O+MJAtw0XGQdnkDixTLcPkiPEJ8fma4KjAfQfH+K2e7B9eR1q5+T9uo5kXpN9DP6DZBXsfn2kczu6vYTZp9S/WkiGxMh0OzehdmqNL8FOnuO2OWOGY3s/oiijs12ywBBFiFPeQR96j9o4Ry3Y3KjDcnJvsh0fVT3bNigw28r4Iy7NNT+b/ziO+/IUgQ4Gv3fhELfb22nC+kp6L2+yv5xzO1kbMAsgWRi5D9bZfmfH/vz2EhYbvQj9pHGbfMsvQzIOz35TXLYs5HWdoZX284xrsxPLnlXE+M62hBxibFbcDll3HX8niP2tHoi/JYaP3VuPzoRbVw8JzFicqefErgJlELr353Mu+2QYhpl+8t/D7lg47ACMHPWgvZM+sER+5s/ED2Ui5HbZH7lgG4uCRtZvJp621qKfoic6YnEZ9rEWOwXvgmgT79tOSOW2YTp09Jcg5FL1kqETHXNx9eHYh4omW3ZbXQ65/yGfYfbhkNdp2wq6bbjIliPu37BxOV7fR/YV4JPj87UBdHboflZlu4UiLH22Do0VOjOn6sLVzxj8B9H1Jsitj3HYS4h9IsK2tLHliJHO7RyY821i2unQOKDof2hb1/zmiG1EfBlxeglvfHZXXuItoIfA0bMBqF/xiR5yuLIJ9egsrDI2ywYybNlsK3Q97OPTsWTwcFvc7yu3mYfimWVYv1TTD0bknNvnawPSN1zzLffh8HGlfX57yfYhp4+7EPpJ5c6WYdh+U1y2PNyeZHs5H9mfIfKJPt0HYUw5fGMbIq8xbtuHJC59EMZ+h9irbacZek7mMFAGyyZSTD9gGIaZJcZfsKs87cIhPfDjrHiyp7zc8U4cVF1HQW0yFsrM30w8bXMHeHH51yj3QJmLSwZW8mNuG6RDR38JjgUxQyc65uLqY3Jn2OPL3EY8au6Qd9Jn2OMCJd0+SI4QnxyTr/VvLkc+XDjbgPbjPgyUM1imLO5+xuA/iDOZD9DH6PYy6hl2A1+MHLadYGxn2OX9qEps8rbFb+wk2pfUexD7i59xIS4TNu7/ju8rPwbFr1rQeaLanLy8VhmbZQMZa4N5Nl/epuC4QiM38tkIcxVo3O1CX71/1txfzrl9vjYwrjPseewlLDZ6seL2czjD7tp2xLXZSUZMS24xSK5Y8I3t2c6w2/v0+bax3yk6w66u5RLTDxiGYWaJsRbsvZsXoHTC9VAXIwjLe8msBYCg5G0eiqebIrHPWCgzfzPxtM0d4F338aXQvVR09qf2r4yRZN0rSYswvQJodS9ahK3kx1yYgnTo6C/BkcRk6MQk677kg9UCHD9Vh72+TAbdhZL7HnZXW3Mxl8ldxj3JC0UoXxmSiLvkFfeFupN4+75Qm6x77+z7NIPkCPDJ8fialMW+79XtF65+xuA/iF04IAH6GN1ewuxT2pYcW+4YKWRyzhsVmPJ5F4F2GscBh00KO1GT56CYIb9z2pkL8YAqOoAj9q0XOOLACO7fLr6EXOrYLBsQ+nTc3pHEG9lWHqyw7J6g+aY4VoNd+8cEOqBFfbqKFWt/eed2ojZgz2vsG+otbil2nLdtPb+9hMVGL464HV9O75YhiYWj3MPushExT8+6NjvJmnvRf3r7kG9sIesuYvmQxOfbxn7lPezarTKSNP4/2z3sOWXInc8xDMPMFuM9w+57yqx8qm9ydk0G5Yr1RObejfhMnny6uLUoaIjffEdfNTxtAwI8PcE2SoxQPu19nvQE0uhVbcYlnQ7ip8TbT1GNChbsWz6510p+zKQgSIeO/hLMZAqROvGcsdG4HyeL1hNcn2ISTAcnxFmzoU96VXQn9Wy2TZ8g7NDLh5vGU4F70Iqe1JteduvFKe/wJy+r+nUR9CTkEDlCfDLITny+JpOtEjQfiq8EA5x/8nn9Hl+3r43Df2L5jAMHIfoYg70E2aewrWRsuWOkKFwc9qe/USLMTpOiTJNRvjYJ+0niS2DMkN9Z97n6if2jBNXzNCazeJNF+QXYM16pJu1W28ayAWmz5mX2XdgWzxBQ27bX4kKvvm9UBWjf0Zw6nv6uIguH0hXj8MBTtO0ovqkFVt65nYwNeOdV6NB6wnoXv6dYrsarJK6k/YTYS1Bs9CF8S4vbQ58SP9y/3bbsi42IjCmJ74TEXA+yT3NOEzkcc+EYW8i6a/uQROhDiQ0x5n6HPyVe96MMPSt2FCSDtAku2BmGecEY8yXx6vsy4/eUqu9A1c6gyCTA8Z5S/ZUcGQsl7i9OyopQ28F9+d7DHuFpGxTg08TWfo90znc4q+8pzXg/q5X8WEkBkluHjv4S7GQqOUNwtgF7ud/Dns558u5dLdlQ25nvUp2H6nVVd3af8btcC1CIEkddjv/9n/+C/5ybg4VXX4dXXnkl1+eDDz6Aer0Ov/32m19eqV/Xu41Pred4NzNdohnbhlsOPXmQ7w92vj9WTVaCfBIZg6/JIvXYYjUeGz0AbIX6wLk7b8cBt1+O7j+yMCp+tY1j0N/DnlcfufXsJcA+RXzRi0N926ExUr4Tmd7BLd4tr40zxE5lHFHepxy9S3+xAhUqkJX4EhQzkjO5FWjgvPrfw64grziicTpemybnrnBa2IocK9px9SwV+Yr/OGzAslnxDvfCWZTVaJvEZbRn6z3sjkLYYoDbR1cEFKEa+Rhuv1WL4uD8+Wqsc1fsDpjbcdmAf16xG+Eb0j9lLC+gbTuLRKWfMHsJi41OPHE76z3sJe395T5ctpyRh4y4NjsRfUZ6l3OvyKHHyuwcKfe6642jYv5U+SIc+816D/sCFtaaH2XoWbOjABkCC/b4O3d7hmGYaWICD53rw+EOJirJA5XmoXiuDq0HjmK6fwittSoUqbijtguY7Ky1oKMtZlmLEdLdhdq7Yl/JU1M9uNoGBniit4+LxWlxzykuIsdPY+J/J3PPOtHDlNKnBxdOlHFRP9Be82QlP66kgMilQ0d/Ca5kagCHlyvi6d8FWL8nvs6gt9+AKr2HmPqaOw7lz5rpA7QSBtC5UdfalXy2IdpWFB3VdjqwZ8jx559/wnvvvecsyvN83nzzTfj11//zy9s7gOZnS4l+5xeXrLnKhOYaE5aykGMei4fGPn4XyWFfEtp/0IL6OfkU7Lh9/UYHtaEQ6pPEGHytdwfnWPq1nGPyDZE4a+8WzvDLkfznqAu7K2WhH3F55TPoI5eeM8lnn3bBjgTGyO0V1f484wyw08FDlF3eM0/zuLKNdiDmXokvYTED+73fTPUx9LLjmPiKowLU9l2apwcd1hLfkTZ7iGqKD9wo23lsoHcHbU3aIW1/kXQSj9+yF8NX/XHMA85BI7EpYdfo60lhYr6yLu/cjtkG/PMa49JZ+xr50TgLdiQwNtr416lIhuRtAuhfZ+Rc5MO25YzYOOLa7CSx547iA75YOSRHIj/Ks+5646iYvzwFO/G0E8md5jelxG9NvHq27CinDFywMwzzgqIX7AwzY3z99dfOQjzk8/nnn4venhfiDHTmPfAMwzAvGxwbIzIOQjIMwzAvH1ywMzPN+++/7yzCqZD/8ccf4Y8//ojOwv/000/QaDTg1VdftdpSH5OgvTEfP6zKvC9bPFHadRkwwzDMiw7HxiFwwc4wDMMocMHOzDRm8U2XuLfb7ahA//TTT6O/i8UifPzxx3D79m14+PCh8xL6STC4tx49QInulV6P7j9N72vNdV8swzDMCwjHxiFwwc4wDMMocMHOzDRm4U3F+rVr16Iz6adOnYIvvvgCvvzyS3jrrbei37/55ht4/PgxvPbaa9p2kyK+V7ok7rPEj3IfLsMwzMsKx8YMuGBnGIZhFLhgZ2Yateimy+DpzDoV61Sk//LLL7C1tQVXr16NinR6Kjy1++GHH6Lv1G0ZhmEYhmEYhmGmDS7YmZlGLbrpnnW6DJ7OrFOxTpfCy99ef/11ePToUfQ6N/p0u11tW4ZhGIZhGIZhmGmDC3ZmplGLbnrAHN2zTpfB05l1+o4ugZdn0+kMPP1NZ+AHgwG88cYbybYMwzAMwzAMwzDTBhfszEwjC24qwulp8HRWvVarwZUrV6Lv6X7277//Pvr/2tpa9KR4+r9sK7dnGIZhGIZhGIaZNrhgZ2YaWXDTh+5f/+ijj+Cdd96JLnlXHyxHBf3PP/8MlUolekr8r7/+qm3LMAzDMAzDMAwzbXDBzsw0atH97bffRq9uo/9vbGxE96zTZfB0Zp2K9WazGf1GZ92/++47bVuGYRiGYRiGYZjpAuD/AX7XQewBCbBVAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NGetText DisplayName="Get Text 'Discount'" sap:VirtualizedContainerService.HintSize="713,158" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="fbdedd34-4046-4413-b86d-bed41e1627e5" TextString="[DiscountValue]" Version="V3">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/first-automation/vendor" DesignTimeRectangle="183, 460, 263, 85" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$100'" FullSelectorArgument="&lt;webctrl id='discount' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl id='discount' tag='H2' type='' class='discount' /&gt;" Guid="057fd86f-1fda-4fb9-936b-b728e2e7873e" InformativeScreenshot="ed45ceea350c55c4bd7fe3cc4e02cc43.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="183, 411, 105, 29" ElementType="Text" FriendlyName="'Discount'" FullSelectorArgument="&lt;webctrl parentid='product-card' tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='product-card' tag='H1' type='' class='' aaname='Discount' check:innerText='Discount' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAhCAYAAADTYiVBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASQSURBVGhD7VnNSyNJFN9/SPfSBJFBGJYBmUu8BBlQ9hDCQEQYgxDxoC6ocxjjQXPZGWFn9rBRmMSDJDDoYYggZA7BgNDCYEBoIZCD0DDQB+G31Ul11+tOd+djW2cb6gfvkKp+9fF+9T6q8gskIgdJWgQhSYsgJGkRhCQtgpCkRRCEtDaK6V8xNh4gUzNIvF7BXkWF/sDVXGgfL4jv0yU2qsQw0K9LWP+7wX95YzjSqMQ3cHrHVQkkaSNCV1H8YxaKabfdxyLNlHgOlz+4OockbTRc7hK7jkpa+thl7gcD+m0DhbUZMTgT5W0NBv9EYnQ8Dmk2dJxmY2KC8QzK97yLoZ+ntesl7LyZRXzK0o/heSKF7F/n0Fxe6wALH+XdDBIvrLlNvQx2jhto++RXE8ZdDYVNojfxWycvf7zw3l/f9fv2O+23U2dNrRo+rqbsvU7GU9g6cq23nhPj9QiLZPwzihFIY7j+gGkyePaLzjuCNmXgMs9jtp94hFsTRn0fiQmP77koiX0PPQPqwXzgfJPLh7gZMrwPSlp6bQNx6zuXKIsVofdkpKGBHTK4khfu7Lup20PM2e3EWEYTxUXhuT3htlVBOoAwS5TNc4de+2Qh+IBwcRiQISzSguUl3l9ztacjTUMxSQYnMdhvU7R9+l3NeWWghI6v4FQ4LtQ/X9p6YxMLKFzxTkND9S3NrwsotrpdMGrYIkQrv++jdscpZXq1PPXAGLYuBN3hkRbDXL4GzRya1QM3JyuO6OS27yPnNBOuBQ5Amv5lRbSbMjWPbL6E6pUG3eFaFCreTwudpQph08R9BevxDMsTFai3YhDjfFvMM7GNqkforG6SvJw9Y5m6i9BIW67YY3bRROGV6P8JpA3vabg/Q9Y3zLGiYjGHYt01Z5uFRvubFIoe90IvXOYJIa6wacFJLMuJvD0s0qYPVN5uIdi+T0DaCDmNwbj6hKRdNXrLJDuhmhU6WyVCGgl/fTCQARy5ROSOsEjrtd/PJq15iIQ1AZPBqkcOFt81Vvbvrc7juY/n2WHQ4WmzKDS7zf2gHpA8GLKnaZ9TPv3/a9IM1N4Rowx5T3Ogc2FXUT3acJb09qIb2CPtPTnNzBPJGSxtHqLMcqPBPdSRP/9LTiNkdqGjvMz7TIkCaUa7iaqj8mKxm01AT7I3aeaFXOjMHWmdVgq6aJoPfKvHBx3qP86y3vZ4/QzrI1aP+EbDZgzpz83uYfCY79FIW+PR4YdXjAggbSAZ4u3RaOyLy2bH+G3bM4zbc2zFed/4jLjDmBjwnjYWZ15B9qixdTgM7CMK8bIOHHm0j4RJGi2ebPHO4yOTpiSGf+XXTjKYJGP0CjvZx71e2O9FpHMIvrtP5SAvIiVR9Ngw2Kl3vq8KYevbzSFp/Q6RNONi22OtYZBm/p/2ZhuFr83R/09rud4CmSgvZpFc/YRq052zCDzfHrtvljcBap5vj+YefN4eOzBDYSWHpfgzopND+ZpNRD0xRNLMw3LTMycL6x7LJKRJRAWStAhCkhZBSNIiCElaBCFJiyAkaRGEJC2CkKRFEJK0yAH4FyNYQ+0TWZUEAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                              <ui:ExcelWriteCell Cell="E18" DisplayName="Write Cell to insert Discount Value" sap:VirtualizedContainerService.HintSize="713,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Invoice" Text="[DiscountValue]" />
+                              <If Condition="[DiscountValue.Contains(&quot;$&quot;)]" sap:VirtualizedContainerService.HintSize="713,250" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If.Then>
+                                  <ui:ExcelWriteCell Cell="E18" DisplayName="Write Cell to insert discount value" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Invoice" Text="[DiscountValue]" />
+                                </If.Then>
+                                <If.Else>
+                                  <ui:ExcelWriteCell Cell="E18" DisplayName="Write Cell - No discount value available" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="Invoice" Text="$0" />
+                                </If.Else>
+                              </If>
+                              <ui:ExcelWriteCell Cell="A31" DisplayName="Write Cell to add the signature in each invoice" sap:VirtualizedContainerService.HintSize="713,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Invoice" Text="[Signature]" />
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAReSURBVFhHvZdtbFNlFMcf3SxUfI0miLAEWdShCV+EGD9oUJBJAobwQb8IGklkKEQkcy8MZK90tGsnZbxsvkDmxsYkS8QFPhDYLIy+sbv2rhW3dYPFbGyVbYwJJMu2wzm3Prd317ZCc+uHf9vnPC/n13PPc57nMrZX6EPdQo39zyKf1wgAZJWQ2sJtzYVrkw+lDT9G5UbBZWB5TmC7XIlRHgnXJ4hSyecwAYwxAzawM/1EoKFSvLEh97eBjOw4xedmNg9k7LSFRO2sloEMg2Po0x3n+4tYMUaiUIr0SAiAiL5xwfrGqyvSt69hiZZuXzv6cwP+cQVAoRveqQtsizRBS33vHV6cTAD5agA0rG7o+SLSpHg0ODG9aGlFR+vy+kCl0l4p3HgpKkC6RgAA8GxSqQfY5zZgm22wq3XwFO+zOIeiA6z5OQyQctBXpTd6BdwZwrsNPVZuV2vJD3/YWOFl9xNmr5hULGwiW8v1OxvZpmZg5SKw7a2Y8e3Ax5c5g9EB1p4MA+hNnjssH7dlth2WHusMcrta8yt8wHLswIpwbEHbUW5P/e4KsK0XJDX2jBVw+30DPGkR7awIt8pOJ7xR03WO29VadNg/Ke1tLDJPfyvuUfbtbu5fn+MIvqK0HYmVAzMAzKJTAdCsXEQpBJimMQQwx+TNjzRm6PbUQ/x3lWc4cQC60nYZYOEhP+jxsTxqbAfMp3JurxZHNAY44p/iAHpFBB63eIF9jbmBJVhn9Bi5vdanPYAcASUA/mtgu7H24+H2nLVDttdoDZAaBWAB7Q4CwLo/d38cAE9Z7hsg4iOIC+B9BcDsfR6XdGrhFltW3XWe29VKq/JPSAAGHFsiyPs9LgBlJcQk8mGFA5ZlhxX1gTPcrlbKobCjOWavidvjAnjreEAG+Ph03yn21SVgmZfg9druAW5XK9mI2Y5HOct2gFUIbuH25w/EAfBmTRjgqH9ks1RK6VDBx9B5a+IF3sc1DbCE5TqoBEvb7drfE/N431xrx4MDrKwPA5D0Zeg8FxehwXvckHfh+icmVzCt7vfRxTkt/VmMzopinLv1IrxW03VTOTdaBKpjAbynOo6b/hzfwj46hxmO/ZQPGGZdGYac2plYZOgOSU4+s8HoFKxSzk2hHKBHg3VgntUnnxExI6AGIH3Y1NfGdmAufInHKk2ik48umBgRsusK3LDhbL9c6biYAZ1suyglMUbpILfX+R8QgNTUO77sg8beX58xeuAxrO3JeL7Pt4jjG3+5+lPf3UldpDlvH+++mXqgY/LlSj8srw1kcfsxMcZhFA1ASx0WYgDglSzhl9IfPcNpUQHwUro20iStNQsf47+v5ZjN6072lpy4Mrqw3BV81eSYKSPKjCq1D0ptc4Qx/6UK4a8XjY6hdcmUoJi86FsCCL2aIUQSdszGRHsYvylMWusRFNuLotoReh2UXs1CDXpXo9cl2l5ElwjxtblPEn50o0ZQQUmGf74ToZlro0+h8x4tMHhuvyezngAAAABJRU5ErkJggg==" InformativeScreenshot="e55a5a5b0beb17e4c260a7a39b7de233.jpg" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" Url="https://acme-test.uipath.com/first-automation" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+            </ui:ExcelApplicationScope>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <umab:OutlookApplicationCard Account="{x:Null}" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App for draft email" sap:VirtualizedContainerService.HintSize="1065,709" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_1">
+      <umab:OutlookApplicationCard.Body>
+        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do - to create a draft email in Outlook" sap:VirtualizedContainerService.HintSize="496,525" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Outlook]" Body="[&quot;Hello&quot; + vbLf + vbLf + &quot;I have completed processing &quot; + CourseEmails.Count.ToString + &quot;emails.&quot; + vbLf + vbLf + &quot;Robot&quot;]" BodyType="Text" DisplayName="Send Email to create a draft email with attachments in Outlook" sap:VirtualizedContainerService.HintSize="434,414" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Invoices Processed" To="[Outlook.SelectedAccount]" UseDocumentAsBody="False">
+              <umab:SendMailX.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                  <InArgument x:TypeArguments="x:String">Invoices</InArgument>
+                </scg:List>
+              </umab:SendMailX.Files>
+              <umab:SendMailX.HtmlBodyFromFile>
+                <umabh:HtmlContentArgument FilePath="{x:Null}">
+                  <umabh:HtmlContentArgument.RuntimeImages>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </umabh:HtmlContentArgument.RuntimeImages>
+                  <umabh:HtmlContentArgument.ValueMappings>
+                    <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                  </umabh:HtmlContentArgument.ValueMappings>
+                </umabh:HtmlContentArgument>
+              </umab:SendMailX.HtmlBodyFromFile>
+            </umab:SendMailX>
+          </Sequence>
+        </ActivityAction>
+      </umab:OutlookApplicationCard.Body>
+    </umab:OutlookApplicationCard>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box to inform about the new draft in outlook" sap:VirtualizedContainerService.HintSize="1065,86" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Check your 'Drafts' foler in Outlook for the newly created draft.&quot;]" />
+  </Sequence>
+</Activity>
